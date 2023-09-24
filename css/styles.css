@@ -25,9 +25,11 @@ nav, footer, header, aside {
 html, body {
   height: 100%;
   width: 100%;
-  font-size: 100%;
   line-height: 1;
   font-size: 14px;
+  font-family: Montserrat, sans-serif;
+  color: #252B42;
+  font-weight: 500;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -97,11 +99,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat ExtraBold";
   src: url("../fonts/Montserrat-ExtraBold.ttf");
 }
-body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-}
-
+/*-----------------------------------------------------------*/
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -110,6 +108,79 @@ body {
 }
 
 ._container {
-  max-width: 1042px;
+  max-width: 1076px;
   margin: 0 auto;
+  padding: 0px 15px;
+}
+
+/*--HEADER-------------------------------------------------------*/
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.header__container {
+  min-height: 104px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 479px) {
+  .header__container {
+    min-height: 70px;
+  }
+}
+
+.header__logo {
+  color: inherit;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+}
+
+.header__menu {
+  margin: 0px 0px 0px 133px;
+}
+@media (max-width: 992px) {
+  .header__menu {
+    margin: 0px 0px 0px 80px;
+  }
+}
+@media (max-width: 767px) {
+  .header__menu {
+    margin: 0px 0px 0px 40px;
+  }
+}
+@media (max-width: 479px) {
+  .header__menu {
+    margin: 0px 0px 0px 20px;
+  }
+}
+
+.menu {
+  padding: 5px 0px;
+}
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu__item:not(:last-child) {
+  margin: 0px 21px 0px 0px;
+}
+
+.menu__link {
+  color: #737373;
+  font-weight: 600;
+  line-height: 171%;
+  letter-spacing: 0.2px;
+}
+@media (max-width: 479px) {
+  .menu__link {
+    font-size: 18px;
+  }
 }
