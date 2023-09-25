@@ -44,7 +44,7 @@
    margin: 0 auto;
    padding: 0px 15px;
 }
-/*--HEADER-------------------------------------------------------*/
+/*------HEADER-------------------------------------------------------*/
 
 .header {
   position: absolute;
@@ -111,4 +111,37 @@
       font-size: 18px;
     }  
   }
+}
+
+/*------PAGE-------------------------------------------------------*/
+.page {
+  flex: 1 1 auto;
+}
+
+.page__main-block {
+}
+
+/*------MAIN-BLOCK--------------------------------------------------*/
+
+
+.main-block {
+}
+.main-block__container {
+}
+._container {
+}
+.main-block__body {
+}
+.main-block__text {
+}
+.main-block__buttons {
+}
+.main-block__button {
+}
+.main-block__button_border {
+}
+
+/*------FOOTER-------------------------------------------------------*/
+.footer {
+
 }
