@@ -33,6 +33,7 @@ html, body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  background-color: #FAFAFA;
 }
 
 input, button, textarea {
@@ -210,6 +211,36 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
 }
 
+/*------HEADER-BLOCK-------------------------------------------------*/
+.header-block {
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.header-block__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 143%;
+}
+.header-block__title :not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+@media (max-width: 992px) {
+  .header-block__title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .header-block__title {
+    font-size: 30px;
+  }
+}
+
+.header-block__sub-title {
+  color: #737373;
+  line-height: 143%;
+}
+
 /*------MAIN-BLOCK--------------------------------------------------*/
 .main-block {
   position: relative;
@@ -227,6 +258,11 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 992px) {
   .main-block__body {
     padding: 120px 0px 191px 0px;
+  }
+}
+@media (max-width: 479px) {
+  .main-block__body {
+    padding: 115px 0px 160px 0px;
   }
 }
 
@@ -381,4 +417,81 @@ h1, h2, h3, h4, h5, h6 {
   color: #737373;
 }
 
+/*------ADVANTAGES---------------------------------------------------*/
+.advantages {
+  padding: 80px 0px;
+}
+@media (max-width: 992px) {
+  .advantages {
+    padding: 50px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages {
+    padding: 30px 0px;
+  }
+}
+
+.advantages__header {
+  margin: 0px 0px 50px 0px;
+}
+@media (max-width: 767px) {
+  .advantages__header {
+    margin: 0px 0px 25px 0px;
+  }
+}
+
+.advantages__body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px -30px;
+}
+
+.advantages__column {
+  padding: 0px 15px;
+  margin: 0px 0px 30px 0px;
+  flex: 0 1 25%;
+}
+@media (max-width: 1020px) {
+  .advantages__column {
+    flex: 0 1 50%;
+  }
+}
+@media (max-width: 560px) {
+  .advantages__column {
+    flex: 0 1 100%;
+  }
+}
+
+.advantages_item {
+  padding: 30px;
+  background-color: #FFF;
+  text-align: center;
+  font-weight: 700;
+}
+.advantages_item :not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+
+.advantages__icon {
+  height: 48px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.advantages__value {
+  font-size: 40px;
+  line-height: 143%;
+  letter-spacing: 0.2px;
+}
+
+.advantages__text {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+  color: #737373;
+}
+
+/*------PRACTICE-----------------------------------------------------*/
 /*------FOOTER-------------------------------------------------------*/
