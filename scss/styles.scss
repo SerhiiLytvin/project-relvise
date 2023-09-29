@@ -147,7 +147,9 @@
 }
 
 .page__whoweare {
+}
 
+.page__clients {
 }
 
 /*------HEADER-BLOCK-------------------------------------------------*/
@@ -525,14 +527,32 @@
 .whoweare {
   padding: 100px 0px 100px 0px;
   background: #FFF;
+
+  @media (max-width: 950px) {
+    padding: 50px 0px 50px 0px;  
+  }
+
+  @media (max-width: 757px) {
+    padding: 20px 0px 50px 0px;  
+  }
 }
 .whoweare__container {
 }
 .whoweare__header {
   margin: 0px 0px 100px 0px;
+
+  @media (max-width: 950px) {
+    margin: 0px 0px 30px 0px;  
+  }
 }
 .whoweare__body {
   display: flex;
+  align-items: flex-start;
+
+  @media (max-width: 950px) {
+      flex-direction: column-reverse;
+      align-items: stretch;
+  }
 }
 .whoweare__video {
   flex: 0 0 57%;
@@ -547,15 +567,38 @@
     left: 0;
     object-fit: cover;
   }
+
+  @media (max-width: 950px) {
+    &:not(:last-child) {
+      margin: 50px 0px 0px 0px;  
+    }
+
+    @media (max-width: 757px) {
+      &:not(:last-child) {
+        margin: 30px 0px 0px 0px;
+      }
+    }
+    padding: 0px 0px 56.25% 0px;
+  }
 }
 .whoweare__content {
   flex: 1 1 auto;
   margin: 20px 0px 0px 120px;
+
+  @media (max-width: 1080px) {
+    margin: 0px 0px 0px 50px;  
+  }
 }
 
 .whoweare__top {
   &:not(:last-child) {
     margin: 0px 0px 50px 0px;
+  }
+
+  @media (max-width: 757px) {
+    &:not(:last-child) {
+      margin: 0px 0px 30px 0px;
+    }
   }
 }
 .whoweare__title {
@@ -565,6 +608,10 @@
   letter-spacing: 0.2px;
   &:not(:last-child) {
   margin: 0px 0px 10px 0px;
+  }
+
+  @media (max-width: 950px) {
+    font-size: 24px;
   }
 }
 .whoweare__text {
@@ -609,6 +656,32 @@
   overflow: hidden;
   max-width: 222px;
   text-overflow: ellipsis;
+}
+
+/*------CLIENTS------------------------------------------------------*/
+
+.clients {
+ }
+.clients__container {
+}
+.clients__items {
+  min-height: 175px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0px -15px;
+}
+.clients__item {
+  padding: 30px 15px;
+  flex: 0 1 16.6667%;
+  text-align: center;
+  min-width: 140px;
+
+  & img {
+    max-width: 100%;
+  }
+
 }
 
 /*------FOOTER-------------------------------------------------------*/
