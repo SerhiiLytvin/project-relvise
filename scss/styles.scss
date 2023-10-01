@@ -161,6 +161,9 @@
 .page__getintouch {
 }
 
+.page__contact {
+}
+
 /*------HEADER-BLOCK-------------------------------------------------*/
 
 .header-block {
@@ -855,6 +858,10 @@
     padding: 50px 40px;
   }
 
+  @media (max-width: 767px) {
+    padding: 30px 20px;
+  }
+
   & .item-getintouch__button {
     border-radius: 5px;
     border: 1px solid #FFF;
@@ -915,6 +922,58 @@
     background-color: #FF7B47;
     color: #fff;
   }
+}
+
+/*------CONTACT------------------------------------------------------*/
+
+.contact {
+  padding: 0 40px;
+  background: #F3F3F3;
+}
+.contact__container {
+}
+.contact__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact__content {
+  & >:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+  }
+}
+.contact__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 133.333%;
+  letter-spacing: 0.1px;
+}
+.contact__text {
+  line-height: 143%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.contact__wrapper {
+  padding: 0 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: auto;
+}
+.contact__button {
+  align-self: stretch;
+  border-radius: 5px;
+  background-color: #FF7B47;
+
+  padding: 0px 40px;
+
+  color: #FFF;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /*------FOOTER-------------------------------------------------------*/
