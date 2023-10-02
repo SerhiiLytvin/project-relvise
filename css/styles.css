@@ -981,18 +981,25 @@ h1, h2, h3, h4, h5, h6 {
 
 /*------CONTACT------------------------------------------------------*/
 .contact {
-  padding: 0 40px;
+  padding: 40px 0;
   background: #F3F3F3;
 }
 
-.contact__body {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+@media (min-width: 765px) {
+  .contact__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .contact__content > :not(:last-child) {
   margin: 0px 0px 10px 0px;
+}
+@media (max-width: 765px) {
+  .contact__content:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+  }
 }
 
 .contact__title {
@@ -1008,24 +1015,47 @@ h1, h2, h3, h4, h5, h6 {
   color: #737373;
 }
 
-.contact__wrapper {
-  padding: 0 76px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: auto;
+@media (min-width: 765px) {
+  .contact__wrapper {
+    min-height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 977px) {
+  .contact__wrapper {
+    padding: 0 76px;
+  }
 }
 
 .contact__button {
-  align-self: stretch;
+  display: block;
   border-radius: 5px;
   background-color: #FF7B47;
-  padding: 0px 40px;
   color: #FFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  transition: background-color 0.3s ease 0s;
+}
+.contact__button:hover {
+  background-color: #aa5330;
+}
+@media (max-width: 765px) {
+  .contact__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+  }
+}
+@media (min-width: 765px) {
+  .contact__button {
+    align-self: stretch;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /*------FOOTER-------------------------------------------------------*/
